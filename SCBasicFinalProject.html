@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attact on Titan</title>
+    <style>
+      body {
+        background: rgb(41, 39, 39);
+      }
+      .container {
+        max-width: 500px;
+        margin: 0px auto;
+        padding: 30px;
+        background: linear-gradient(
+          135.8deg,
+          rgb(26, 26, 29) 27.1%,
+          rgb(111, 34, 50) 77.5%
+        );
+      }
+      h1 {
+          text-align: center;
+        font-family: Impact, fantasy;
+        color: whitesmoke;
+        font-size: 60px;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        background: -webkit-linear-gradient(rgb(136, 74, 3), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        padding: 0;
+      }
+      img{
+          text-align: center;
+          margin-bottom: 3%;
+      }
+      p {
+        font-family: monospace;
+        font-size: large;
+        text-align: justify;
+        color: rgb(168, 152, 152);
+        font-stretch: condensed;
+      }
+      span{
+          text-decoration: underline;
+          font-weight: bold;
+          font-size: larger;
+      }
+      .learnmore{
+          text-align: left;
+          color: rgb(0, 124, 128);
+          text-decoration: none;
+         }
+
+     button {
+        display: block;
+        margin: 15px auto;
+        border: 2px solid #822D04;
+        background: #291004;
+        color:rgb(199, 183, 182); 
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 11px 100px;
+        border-radius: 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .learnmore:hover{
+          text-decoration: underline;
+      }
+      button:hover{
+        background-color: rgb(199, 183, 182);
+        color:#291004;
+        border: 2px solid #291004;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Shingeki no Kyojin</h2>
+      <h1>Attack on Titan ⚔️</h1>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/270/original/218-2180031_shingeki-no-kyojin-season-2-episode-1-22.jpeg?1630269845"
+        alt="Attack on Titan Screen"
+        width="500px"
+      />
+      <p>
+        <span>Attact on Titan</span> (Japanese: 進撃の巨人, Hepburn: Shingeki no
+        Kyojin, lit. "The Advancing Giants") is a Japanese manga series written
+        and illustrated by <strong><em>Hajime Isayama</strong></em>. It is set in a world
+        where humanity lives inside cities surrounded by three enormous walls
+        that protect them from the gigantic man-eating humanoids referred to as
+        Titans; the story follows Eren Yeager, who vows to exterminate the
+        Titans after a Titan brings about the destruction of his hometown and
+        the death of his mother. Attack on Titan was serialized in Kodansha's
+        monthly shōnen manga magazine Bessatsu Shōnen Magazine from September
+        2009 to April 2021, with its chapters collected in 34 tankōbon volumes.
+      </p>
+      <a class="learnmore" href="https://en.wikipedia.org/wiki/Attack_on_Titan" target="_blank"
+        >Learn More</a
+      ><br />
+      <button>Watch Now!</button>
+    </div>
+    <script>
+        function watchNow() {
+        let name = prompt("Hello! What is your name?");
+        let verify = prompt(`Hi ${name}, please answer this question to get access to the web page: 2 + 2 = ?`);
+        let h1 = document.querySelector("h1");
+        if (verify === "4") {
+          alert("Correct! Redirecting...Please wait!");
+        } else {
+            alert("Invalid answer! You've been blocked!")
+        }
+    }
+
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", watchNow);
+    </script>
+  </body>
+</html>
